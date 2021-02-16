@@ -1,5 +1,3 @@
-const root = document.getElementById('root')
-
 class MoviesModel {
     constructor(title, plot, year, runTime, genre, director, writer, actors, language, type) {
         this._title = title,
@@ -41,21 +39,22 @@ class MoviesModel {
 }
 
 class MoviesController {
+  request(movieName) {
+    const api = new XMLHttpRequest();
+    api.open(
+      "GET",
+      `http://www.omdbapi.com/?t=${this.formatName(movieName)}&apikey=33710bc6&`
+    );
+    api.addEventListener("load", () => {
+      if (api.status == 200) {
+        let response = JSON.parse(api.responseText);
+        console.log(response);
+      }
+    });
+    api.send();
+  }
 
-    request() {
-        const api = new XMLHttpRequest();
-        api.open('GET', `http://www.omdbapi.com/?t=Iron+Man+3&apikey=33710bc6&`);
-        api.addEventListener('load', () => {
-            if (api.status == 200) {
-                let response = JSON.parse(api.responseText);
-                console.log(response);
-            }
-        })
-        api.send();
-    }
-
-
+  formatName(movieName) {
+    return movieName.replace(" ", "+");
+  }
 }
-
-let app = new MoviesController();
-app.request();
