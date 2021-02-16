@@ -31,7 +31,7 @@
             <a href="#" class="logoHeader">ResiliaFlix</a>
             <nav class="barraNavegacao">
                 <ul class="barraNavegacaoLista">
-                    <li class="barraNavegacaoItem"><a href="" class="barraNavegacaoLink">ENTRAR</a></li>
+                    <li class="barraNavegacaoItem"><a href="" class="barraNavegacaoLink" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
                 </ul>
             </nav>
         </div>
@@ -153,7 +153,6 @@
             </div>
     </section>
     </main>
-
     <footer class="rodape">
         <div class="container-fluid">
             <div class="contato">
@@ -164,5 +163,40 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <dialog class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Entrar</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </header>
+          <main class="modal-body">
+            <form id="loginForm" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="emailInput">Email</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="eu@email.com.br" required>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Senha</label>
+                <input type="password" class="form-control" id="inputPassword" required>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe" checked>
+                <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </form>
+          </main>
+          <footer class="modal-footer">
+            <small><a id="emailHelp" href="../PasswordRecovery/index.html">Esqueçi minha senha</a></small>
+          </footer>
+        </dialog>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
