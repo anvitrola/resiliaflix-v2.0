@@ -1,0 +1,38 @@
+.recuperacao {
+    align-items: center;
+    display: flex;
+    height: 73vh;
+    width: 100%;
+}
+.recuperacao .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    padding: 3rem;
+    width: 50%;
+    border: 1px #756f6f solid;
+}
+.recuperacao__formulario{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+.recuperacao__input{
+    padding: .3rem;
+    height: 3rem;
+    width: 80%;
+    border: 1px solid rgb(34, 34, 34);
+}
+.recuperacao__botao{
+    background-color: rgb(34, 34, 34);
+    border: none;
+    color: whitesmoke;
+    padding: .3rem;
+    width: 20%;
+}
+.recuperacao__submit-msg-erro{
+    color: red;
+    font-size: 1em;
+    margin-top: 3%;
+}

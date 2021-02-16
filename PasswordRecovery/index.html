@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ResiliaFlix | Recuperação da Senha</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="..//css/cabecalho-default.css">
+    <link rel="stylesheet" href="..//css/rodape-default.css">
+    <link rel="stylesheet" href="assets/css/recuperacao-form.css">
 </head>
+
 <body>
-    <h1>Página de recuperação de senha</h1>
-    <small>...em construção</small>
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="cabecalho__logo">ResiliaFlix</a>
+            <nav class="cabecalho__menu">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link">Em Exibição</a></li>
+                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="recuperacao">
+            <div class="container-fluid" id="container-fluid">
+                <h4 class="recuperacao__titulo">
+                    Insira abaixo o e-mail ou número de telefone que você usou para criar uma conta. Vamos enviar um
+                    link para redefinir sua senha.
+                </h4>
+                <form action="" class="recuperacao__formulario" id="recuperacao__formulario">
+                    <input type="email" class="recuperacao__input" id="recuperacao__input" placeholder="example@example.com" required>
+                    <button class="recuperacao__botao" id="recuperacao__botao" type="submit">Enviar</button>
+                </form>
+                <h5 class="recuperacao__submit-msg-erro d-none" id="recuperacao__submit-msg-erro">Email inválido</h5>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container-fluid">
+            <div class="rodape__contato">
+                <a href="contato.html" class="rodape__contato-link">Contato</a>
+            </div>
+            <div class="rodape__copyright">
+                <p class="rodape__copyright-text">&copy; ResiliaFlix, 2021</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/submitForm.js"></script>
 </body>
+
 </html>
