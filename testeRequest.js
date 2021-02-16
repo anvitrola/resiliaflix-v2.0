@@ -57,5 +57,5 @@ class MoviesController {
 
 }
 
-let app = new MoviesController;
+let app = new MoviesController();
 app.request();
