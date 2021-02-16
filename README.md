@@ -3,6 +3,7 @@
 - [Introdução](#introdução)
 - [🤔 Como contribuir?](#como-contribuir)
   - [🤔 fiz um fork como pegar as atualizações?](#como-pegar-atualizações-a-partir-de-um-fork)
+  - [🤔 Como fazer o fetch de uma branch que esta apenas no remoto(github)?](#como-fazer-o-fetch-de-uma-branch-no-remoto)
 - [📚 Referência](#referência)
 
 # Introdução
@@ -77,6 +78,14 @@ O mesmo se aplica para o push... mas... nesse caso o ideal é fazer um pullreque
   git push repoOriginal NOME-DA-BRANCH
 ```
 **O ideal é nunca commitar diretamente na branch main, eu dei um exemplo **
+
+## Como fazer o fetch de uma branch no remoto?
+
+Nesse cenário você quer fazer o fetch da uma branch que esteja **apenas** no repositório remoto, no caso ogithub, para isso vc pode usar o comando.
+
+```bash
+git checkout --track origin/nome-da-branch
+```
 
 # Referência
 
