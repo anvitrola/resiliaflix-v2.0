@@ -21,5 +21,9 @@
     font-weight: 600;
     width: 30%;
     font-size: 2.5em;
-
+}
+@media screen and (max-width: 768px){
+    .faca-parte__titulo{
+        font-size: 1.3em;
+    }
 }

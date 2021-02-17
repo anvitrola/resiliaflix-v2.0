@@ -18,3 +18,8 @@
     padding: 1em;
     width: 30%;
 }
+@media screen and (max-width: 768px){
+    .destaque .container-fluid{
+        width: 70%;
+    }
+}
