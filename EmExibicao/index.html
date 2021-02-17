@@ -63,31 +63,8 @@
                     <h2 class="indicacoes__titulo">Indicações</h2>
                     <h5 class="indicacoes__paragrafo">Filmes escolhidos a dedo por nossa equipe de curadoria</h5>
                 </div>
-                <div class="indicacoes__grid">
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
-                    <a href="" class="indicacoes__link">
-                        <img src="assets/imgs/retrato-jovem-em-chamas-blue.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
-                    </a>
+                <div id="indicacoes-movies" class="indicacoes__grid">
+                    <!-- loadMoviesCard.js -->
                 </div>
             </div>
         </section>
@@ -151,7 +128,29 @@
             </div>
         </div>
     </footer>
-
+    <!-- Modal -->
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="movie-card-title" class="modal-title mx-auto" id="movieModalLabel">Modal title</h5>
+              <button type="button" class="close m-0 p-0" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="card d-flex justify-content-center align-items-center px-2 py-2">
+                    <img id="movie-card-img" src="" class="card-img-top" style="max-width: 200px;;" alt="...">
+                    <div class="card-body">
+                      <p id="movie-card-plot" class="card-text"></p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../Api/omdb.js"></script>
+    <script src="./scripts/loadMoviesCards.js"></script>
 </body>
 
 </html>

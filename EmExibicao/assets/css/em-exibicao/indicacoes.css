@@ -25,3 +25,11 @@
     grid-template-rows: auto auto;
     height: auto;
 }
+.indicacoes__banner {
+    max-width: 160px;
+    transition: transform .3s;
+}
+
+.indicacoes__banner:hover {
+    transform: scale(1.05);
+}

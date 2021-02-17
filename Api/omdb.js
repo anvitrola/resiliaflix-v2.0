@@ -39,16 +39,16 @@ class MoviesModel {
 }
 
 class MoviesController {
-  request(movieName) {
+  request(movieName, cb) {
     const api = new XMLHttpRequest();
     api.open(
       "GET",
-      `http://www.omdbapi.com/?t=${this.formatName(movieName)}&apikey=33710bc6&`
+      `http://www.omdbapi.com/?t=${this.formatName(movieName)}&apikey=33710bc6&plot=full`
     );
     api.addEventListener("load", () => {
       if (api.status == 200) {
         let response = JSON.parse(api.responseText);
-        console.log(response);
+        cb(response)
       }
     });
     api.send();
