@@ -34,9 +34,9 @@
 @media screen and (max-width: 768px){
     .dispositivos .container-fluid{
         height: 50vh;
+        justify-content: space-around;
         padding: 1rem;
         width: auto;
-        justify-content: space-around;
     }
     .dispositivos__titulo{
         font-size: 1.2rem;

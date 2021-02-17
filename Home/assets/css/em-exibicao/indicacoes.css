@@ -31,8 +31,8 @@
         padding: 1rem;
     }
     .indicacoes__texto-box{
-        width: 100%;
         flex-direction: column;
+        width: 100%;
     }
     .indicacoes__titulo{
         font-size: 1.5em;
