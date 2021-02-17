@@ -1,5 +1,5 @@
 .cabecalho{
-    background-color: #f5f5f5;
+    background-color: rgb(245, 245, 245);
     display: flex;
     height: 7vh;
     justify-content: center;
@@ -12,7 +12,7 @@
     width: 99%;
 }
 .cabecalho__logo{
-    color: rgb(44, 43, 43);
+    color: rgb(63, 63, 63);
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -30,8 +30,11 @@
     width: 100%;
 }
 .cabecalho__lista-link {
-    color: rgb(44, 43, 43);
+    color: rgb(63, 63, 63);
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+}
+.cabecalho__logo:hover, .cabecalho__lista-link:hover{
+    color: rgb(103, 136, 151);
 }

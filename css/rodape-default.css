@@ -13,7 +13,11 @@
 }
 .rodape__copyright-text{
     margin-bottom: 0;
+    color: rgb(63, 63, 63);
 }
 .rodape__contato-link{
-    color: rgb(34, 34, 34);
+    color: rgb(63, 63, 63);
+}
+.rodape__contato-link:hover{
+    color: rgb(103, 136, 151);
 }

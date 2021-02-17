@@ -1,6 +1,6 @@
 .faca-parte{
     align-items: center;
-    background-image: url(../../imgs/sessaoterciaria.jpg);
+    background-image: url(../../imgs/capitao-fantastico.jpg);
     background-position-y: 30%;
     background-size: cover;
     display: flex;
@@ -20,4 +20,6 @@
     color: #f4f4f4;
     font-weight: 600;
     width: 30%;
+    font-size: 2.5em;
+
 }

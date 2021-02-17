@@ -1,7 +1,7 @@
 .banner{
     align-items: flex-end;
     background-attachment: fixed;
-    background-image: url(../../imgs/banner.jpg);
+    background-image: url(../../imgs/retrato-jovem-em-chamas.jpg);
     background-size: cover;
     justify-content: flex-start;
     display: flex;
@@ -14,7 +14,7 @@
 .banner__titulo{
     color: #f4f4f4;
     font-weight: 600;
-    font-size: 3.5em;
+    font-size: 4em;
     margin-bottom: 3%;
     text-transform: uppercase;
 }
@@ -30,4 +30,10 @@
     height: 3em;
     text-transform: capitalize; 
     width: 15em; 
+}
+.banner__botao:hover{
+    background-color: rgb(54, 88, 104);
+}
+.banner__link:hover{
+    color: rgb(226, 226, 226);
 }
