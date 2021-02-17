@@ -5,7 +5,7 @@
 }
 .destaque__banner{
     align-items: flex-end;
-    background-image: url(../../imgs/wonder-woman.jpg);
+    background-image: url("../../imgs/wonder-woman.jpg");
     background-size: cover;
     background-position-y: 50%;
     display: flex;
