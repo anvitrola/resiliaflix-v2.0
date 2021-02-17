@@ -31,6 +31,36 @@
     justify-content: space-around;
     width: 70%;
 }
-.carousel-item{
-    width: 400px;
+.filmes__carrossel--first{
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px){
+    .filmes .container-fluid{
+        height: auto;
+    }
+    .filmes__texto-box{
+        align-items: center;
+        flex-direction: column;
+    }
+    .filmes__titulo{
+        align-self: flex-end;
+
+        font-size: 1.5em;
+    }
+    .filmes__subtitulo{
+        font-size: 1em;
+        margin-top: 1%;
+        width: 100%;
+    }
+    .filmes__carrossel{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .carousel-inner{
+        margin: 0 0 5% 0;
+    }
+    .filmes__carrossel--first{
+        margin-right: 0;
+    }
 }

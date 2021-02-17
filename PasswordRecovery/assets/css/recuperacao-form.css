@@ -38,3 +38,16 @@
     font-size: 1em;
     margin-top: 3%;
 }
+@media screen and (max-width: 768px){
+    .recuperacao .container-fluid{
+        height: auto;
+        padding: 1.3rem;
+        width: 80%;
+    }
+    .recuperacao__formulario{
+        flex-direction: column;
+    }
+    .recuperacao__botao, .recuperacao__input{
+        width: auto;
+    }
+}
