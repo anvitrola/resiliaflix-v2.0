@@ -1,0 +1,29 @@
+.dispositivos{
+    align-items: center;
+    background-image: url(../../imgs/lms.jpg);
+    background-position-y: 65%;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.dispositivos .container-fluid{
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: space-between;
+    width: 70%;
+}
+.dispositivos__texto-box{
+    width: 50%;
+}
+.dispositivos__icones{
+    width: 50%;
+}
+.dispositivos__titulo{
+    color: #f4f4f4;
+    font-weight: 700;
+}
+.icone {
+    color:white;
+}

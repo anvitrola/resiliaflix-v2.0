@@ -1,8 +1,10 @@
 .recuperacao {
     align-items: center;
+    background-image: url(..//imgs/);
     display: flex;
-    height: 73vh;
+    height: 83vh;
     width: 100%;
+    background-color: rgb(250, 250, 250);
 }
 .recuperacao .container-fluid {
     display: flex;

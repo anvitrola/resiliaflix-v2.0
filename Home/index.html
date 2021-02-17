@@ -23,46 +23,58 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
     crossorigin="anonymous"
   />
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index/cabecalho-index.css">
+  <link rel="stylesheet" href="assets/css/index/banner.css">
+  <link rel="stylesheet" href="assets/css/index/dispositivos.css">
+  <link rel="stylesheet" href="assets/css/index/filmes-carrossel.css">
+  <link rel="stylesheet" href="assets/css/index/faca-parte.css">
+  <link rel="stylesheet" href="..//css/rodape-default.css">
+    
+    <script src="https://kit.fontawesome.com/3e11f101bb.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header class="cabecalhoPrincipal">
+    <header class="cabecalho">
         <div class="container">
-            <a href="#" class="logoHeader">ResiliaFlix</a>
-            <nav class="barraNavegacao">
-                <ul class="barraNavegacaoLista">
-                    <li class="barraNavegacaoItem"><a href="" class="barraNavegacaoLink" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
+            <a href="#" class="cabecalho__logo">ResiliaFlix</a>
+            <nav class="cabecalho__menu">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="conteudoPrincipal">
-        <section class="sessaoPrimaria">
+        <section class="banner">
                 <div class="container-fluid">
-                    <h1 class="chamada">Assista a filmes escolhidos<br> a dedo</h1>
-                    <button type="button" class="btn btn-secondary" style="width: 15em; height: 3em;background-color: rgb(103, 136, 151);font-size: 1.2em; text-transform: capitalize; border: none; color: #f4f4f4;">
-                        <a href="emExibicao.html" class="exibicaoLink">Em exibição</a>
+                    <h1 class="banner__titulo">Assista a filmes escolhidos<br> a dedo</h1>
+                    <button type="button" class="btn btn-secondary banner__botao">
+                        <a href="em-exibicao.html" class="banner__link">Em exibição</a>
                     </button>
                 </div>
         </section>
-        <section class="sessaoSecundaria">
+
+        <section class="dispositivos">
                 <div class="container-fluid">
-                    <div class="explicacaoServico">
-                        <h2 class="explicacaoServicoTextoS2">Veja online todos os nossos filmes quando quiser. Em qualquer tela ou dispositivo, onde quiser</h2>
+                    <div class="dispositivos__texto-box">
+                        <h2 class="dispositivos__titulo">Veja online todos os nossos filmes quando quiser. Em qualquer tela ou dispositivo, onde quiser</h2>
                     </div>
-                    <div class="dispositivos">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quos ratione officiis consectetur, eos itaque laudantium soluta. Doloremque distinctio, facilis sapiente qui earum, facere nesciunt, est totam blanditiis obcaecati accusantium!
+                    <div class="dispositivos__icones">
+                      <i class="fas fa-tablet-alt icone"></i>
+                      <i class="fas fa-laptop icone"></i>
+                      <i class="fas fa-mobile-alt icone"></i>
                     </div>
                 </div>
         </section>
-        <section class="sessaoTerciaria">
+
+        <section class="filmes">
                 <div class="container-fluid">
-                    <div class="logoEexplicacao">
-                        <h1 class="logoS4">ResiliaFlix</h1>
-                        <h2 class="explicacaoServicoTextoS3">De clássicos cult a obras-primas modernas. Dos maiores diretores consagrados aos novos em ascensão. Filmes de todos os cantos do mundo</h2>
+                    <div class="filmes__texto-box">
+                        <h1 class="filmes__titulo">ResiliaFlix</h1>
+                        <h2 class="filmes__subtitulo">De clássicos cult a obras-primas modernas. Dos maiores diretores consagrados aos novos em ascensão. Filmes de todos os cantos do mundo</h2>
                     </div>
-                    <div class="carroussel">
+                    <div class="filmes__carrossel">
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="margin-right: 10%;">
                             <ol class="carousel-indicators">
                               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -137,26 +149,27 @@
                     
                 </div>
         </section>
-        <section class="sessaoQuaternaria">
+
+        <section class="faca-parte">
             <div class="container-fluid">
-                <div class="apelo">
-                    <h2 class="explicacaoServicoTextoS5">Faça parte da maior comunidade de cinéfilos do mundo.</h2>
+                <div class="faca-parte__texto-box">
+                    <h2 class="faca-parte__titulo">Faça parte da maior comunidade de cinéfilos do mundo.</h2>
                 </div>
             </div>
-    </section>
+        </section>
     </main>
+
     <footer class="rodape">
-        <div class="container-fluid">
-            <div class="contato">
-                <a href="#" class="contato">Contato</a>
-            </div>
-            <div class="copy">
-                <p class="copyright">&copy; ResiliaFlix, 2021</p>
-            </div>
-        </div>
+      <div class="container-fluid">
+          <div class="rodape__contato">
+              <a href="contato.html" class="rodape__contato-link">Contato</a>
+          </div>
+          <div class="rodape__copyright">
+              <p class="rodape__copyright-text">&copy; ResiliaFlix, 2021</p>
+          </div>
+      </div>
     </footer>
 
-    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <dialog class="modal-content">
@@ -189,6 +202,7 @@
         </dialog>
       </div>
     </div>
-    <script src="./scripts/index.js"></script>
+
+    <script src="..//js/modal-login.js"></script>
 </body>
 </html>

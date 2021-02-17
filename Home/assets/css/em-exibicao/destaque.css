@@ -1,0 +1,20 @@
+.destaque{
+    display: flex;
+    height: 93vh;
+    width: 100%;
+}
+.destaque__banner{
+    align-items: flex-end;
+    background-image: url(../../imgs/s3.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+    display: flex;
+    height: 93vh;
+    width: 100%;
+}
+.destaque .container-fluid{
+    background-color: rgb(255, 255, 255, .3);
+    margin: 0 0 15% 0;
+    padding: 1em;
+    width: 30%;
+}

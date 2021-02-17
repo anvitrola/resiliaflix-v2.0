@@ -1,0 +1,23 @@
+.faca-parte{
+    align-items: center;
+    background-image: url(../../imgs/sessaoterciaria.jpg);
+    background-position-y: 30%;
+    background-size: cover;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+}
+.faca-parte .container-fluid{
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: start;
+    margin: 3% auto;
+    width: 90%;
+}
+.faca-parte__titulo{
+    color: #f4f4f4;
+    font-weight: 600;
+    width: 30%;
+}

@@ -1,0 +1,27 @@
+.lancamentos{
+    background-image: url(../../imgs/banner.jpeg);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+.lancamentos .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 90%;
+}
+.lancamentos__texto-box{
+    align-self: flex-start;
+    color: white;
+    margin-top: 3%;
+    width: 30%;
+}
+.lancamentos__carrossel{
+    align-self: flex-end;
+    margin-bottom: 3%;
+    width: 45%;
+}
+.carousel-control-next, .carousel-control-prev{
+    background: none;
+    border: none;
+}

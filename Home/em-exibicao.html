@@ -23,8 +23,10 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
     crossorigin="anonymous"
   />
-    <link rel="stylesheet" href="assets/css/emExibicao.css">
     <link rel="stylesheet" href="..//css/cabecalho-default.css">
+    <link rel="stylesheet" href="assets/css/em-exibicao/destaque.css">
+    <link rel="stylesheet" href="assets/css/em-exibicao/indicacoes.css">
+    <link rel="stylesheet" href="assets/css/em-exibicao/lancamentos.css">
     <link rel="stylesheet" href="..//css/rodape-default.css">
     
 </head>
@@ -35,20 +37,19 @@
             <a href="index.html" class="cabecalho__logo">ResiliaFlix</a>
             <nav class="cabecalho__menu">
                 <ul class="cabecalho__lista">
-                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link">Em Exibição</a></li>
-                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link">Entrar</a></li>
+                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="conteudoPrincipal">
-        <section class="filmeDestaque">
-            <a href="#" class="bannerDestaque" style="text-decoration: none; color:rgb(31, 30, 30)">
+        <section class="destaque">
+            <a href="#" class="destaque__banner" style="text-decoration: none; color:rgb(31, 30, 30)">
                 <div class="container-fluid">
-                    <h2 class="tituloFilme">Title</h2>
-                    <p class="info-tecnica">Diretor | Ano de lançamento</p>
-                    <p class="sinopse">
+                    <h2 class="destaque__titulo">Title</h2>
+                    <p class="destaque__infos">Diretor | Ano de lançamento</p>
+                    <p class="destaque__sinopse">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque optio,
                         dolorem, magni harum reiciendis distinctio iste quis mollitia, enim aliquam eveniet veritatis.
                         Voluptatum unde neque adipisci labore ea repellendus temporibus!
@@ -58,48 +59,48 @@
         </section>
         <section class="indicacoes">
             <div class="container-fluid">
-                <div class="indicacoesTextos">
-                    <h2 class="indicacoesTitulo">Indicações</h2>
-                    <h5 class="indicacoesParagrafo">Filmes escolhidos a dedo por nossa equipe de curadoria</h5>
+                <div class="indicacoes__texto-box">
+                    <h2 class="indicacoes__titulo">Indicações</h2>
+                    <h5 class="indicacoes__paragrafo">Filmes escolhidos a dedo por nossa equipe de curadoria</h5>
                 </div>
-                <div class="catalogoFilmes-grid">
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                <div class="indicacoes__grid">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
-                    <a href="" class="filme">
-                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;">
+                    <a href="" class="indicacoes__link">
+                        <img src="assets/imgs/banner.jpeg" alt="" style="max-width: 200px;" class="indicacoes__banner">
                     </a>
                 </div>
             </div>
         </section>
         <section class="lancamentos">
             <div class="container-fluid">
-                <div class="textosLancamento">
-                    <h2 class="tituloLancamento">Lançamentos ResiliaFlix</h2>
-                    <p class="paragrafoLancamento">
+                <div class="lancamentos__texto-box">
+                    <h2 class="lancamentos__titulo">Lançamentos ResiliaFlix</h2>
+                    <p class="lancamentos__paragrafo">
                         Nossa coleção exclusiva de estreias aclamadas de alguns dos nossos cineastas favoritos. Apenas
                         no ResiliaFlix.
                     </p>
                 </div>
-                <div class="carrossel">
+                <div class="lancamentos__carrossel">
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="margin-right: 10%;">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
