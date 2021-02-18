@@ -1,0 +1,36 @@
+.modal-body{
+    padding: 1rem;
+}
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    height: 73vh;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+.field{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border-radius: 3px;
+    border: 1px rgb(54, 88, 104) solid;
+    padding: .3rem;
+    width: 70%;
+}
+.cadastro__botao{
+    background-color: rgb(54, 88, 104);
+    border: none;
+    border-radius: 0;
+    color: white;
+    height: 3em;
+    width: 100%;
+}
+.cadastro__botao:hover{
+    background-color: rgb(110, 136, 148);
+}
+@media screen and (max-width: 768px){
+    input{
+        width: 50%;
+    }
+}

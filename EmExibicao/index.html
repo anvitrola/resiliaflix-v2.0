@@ -34,7 +34,7 @@
 <body>
     <header class="cabecalho">
         <div class="container">
-            <a href="index.html" class="cabecalho__logo">ResiliaFlix</a>
+            <a href="../index.html" class="cabecalho__logo">ResiliaFlix</a>
             <nav class="cabecalho__menu">
                 <ul class="cabecalho__lista">
                     <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
@@ -88,19 +88,19 @@
                           <div class="carousel-item active">
                             <img src="assets/imgs/little-miss-sunshine.jpg" class="d-block w-100 img-responsive" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                              <h6>Titulo | Diretor | Ano de Lançamento</h6>
+                              <h6>Pequena Miss Sunshine</h6>
                             </div>
                           </div>
                           <div class="carousel-item">
                             <img src="./assets/imgs/never-back-down.jpg" class="d-block w-100 img-responsive" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h6>Titulo | Diretor | Ano de Lançamento</h6>
+                                <h6>Quebrando Regras</h6>
                             </div>
                           </div>
                           <div class="carousel-item">
-                            <img src="./assets/imgs/clube-da-luta.jpeg" class="d-block w-100" alt="...">
+                            <img src="./assets/imgs/wonder-woman.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h6>Titulo | Diretor | Ano de Lançamento</h6>
+                                <h6>Mulher-Maravilha</h6>
                             </div>
                           </div>
                         </div>
@@ -121,14 +121,14 @@
     <footer class="rodape">
         <div class="container-fluid">
             <div class="rodape__contato">
-                <a href="contato.html" class="rodape__contato-link">Contato</a>
+                <a href="../Contato/index.html" class="rodape__contato-link">Contato</a>
             </div>
             <div class="rodape__copyright">
                 <p class="rodape__copyright-text">&copy; ResiliaFlix, 2021</p>
             </div>
         </div>
     </footer>
-    <!-- Modal -->
+
     <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -149,7 +149,9 @@
           </div>
         </div>
     </div>
+
     <script src="../Api/omdb.js"></script>
+    <script src="./js/modal-login.js"></script>
     <script src="./scripts/loadMoviesCards.js"></script>
 </body>
 
