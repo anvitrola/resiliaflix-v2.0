@@ -48,10 +48,8 @@
 @media screen and (max-width: 768px){
     .cabecalho__menu{
         width: 50%;
-
     }
-.cabecalho__lista-link{
-    color: white;
-
+    .cabecalho__lista-link{
+        color: white;
+    }
 }
-
