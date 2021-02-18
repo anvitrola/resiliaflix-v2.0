@@ -37,3 +37,12 @@
 .cabecalho__logo:hover, .cabecalho__lista-link:hover{
     color: rgb(103, 136, 151);
 }
+@media screen and (max-width: 768px){
+    .cabecalho{
+        height: auto;
+    }
+    .cabecalho .container{
+        flex-direction: column;
+        padding: .3rem;
+    }
+}

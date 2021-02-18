@@ -1,0 +1,6 @@
+.cabecalho__input{
+    border: none;
+    border-bottom: 3px black solid;
+    background-color: rgb(245, 245, 245);
+    padding: 0.3rem;
+}

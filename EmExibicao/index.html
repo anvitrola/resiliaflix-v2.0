@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/em-exibicao/destaque.css">
     <link rel="stylesheet" href="assets/css/em-exibicao/indicacoes.css">
     <link rel="stylesheet" href="assets/css/em-exibicao/lancamentos.css">
+    <link rel="stylesheet" href="assets/css/em-exibicao/input-buscar.css">
     <link rel="stylesheet" href="..//css/rodape-default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
@@ -34,20 +35,20 @@
 <body>
     <header class="cabecalho sticky-top">
         <div class="container">
-            <a href="index.html" class="cabecalho__logo">ResiliaFlix</a>
+            <a href="../index.html" class="cabecalho__logo">ResiliaFlix</a>
             <nav class="cabecalho__menu d-flex">
               <ul class="cabecalho__lista">
                 <input
                 type="text"
                 id="user-movies-input"
-                placeholder="Meu filme favorito!"
+                placeholder="Buscar" class="cabecalho__input"
               />
               <button type="submit" id="fetch-movies-btn" class="btn" data-toggle="modal" data-target="#movieModal">
                 <i class="fas fa-search"></i>
               </button>
               </ul>
                 <ul class="cabecalho__lista">
-                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link">Sair</a></li>
+                    <li class="cabecalho__lista-item"><a href="../index.html" class="cabecalho__lista-link">Sair</a></li>
                 </ul>
             </nav>
         </div>
