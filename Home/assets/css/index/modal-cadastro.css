@@ -1,22 +1,24 @@
-.modal-body{
-    padding: 1rem;
-}
-#cadastro{
+#cadastro {
     display: flex;
-    flex-direction: column;
-    height: 73vh;
+    flex-flow: row wrap;
     justify-content: space-around;
-    padding: 1.5rem;
+    padding: 0px;
 }
-.field{
-    display: flex;
-    justify-content: space-between;
+.field {
+    margin-bottom: 1em;
+    width: 40%;
 }
-input{
-    border-radius: 3px;
+.legenda {
+    margin-bottom: 0px;
+}
+#msg-erro {
+    color: red;
+    padding: 0 0 2em 2em;
+}
+.input-box {
     border: 1px rgb(54, 88, 104) solid;
-    padding: .3rem;
-    width: 70%;
+    border-radius: 3px;
+    padding: .2rem;
 }
 .cadastro__botao{
     background-color: rgb(54, 88, 104);
@@ -31,6 +33,13 @@ input{
 }
 @media screen and (max-width: 768px){
     input{
-        width: 50%;
+        width: 100%;
+    }
+    .field {
+        margin-bottom: 1em;
+        width: 40%;
+    }
+    .legenda {
+        margin-bottom: 0px;
     }
 }

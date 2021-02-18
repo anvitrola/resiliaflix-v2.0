@@ -8,6 +8,7 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../novoUsuario/css/cadastrarUsuario.css">
   <title>CadastrarUsuário</title>
 </head>
 
@@ -16,15 +17,90 @@
     Cadastrar Novo Usuário
   </button>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Novo Usuário</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- OS CAMPOS DE PREENCHIMENTO -->
+          <form id="cadastro">
+            <div class="field">
+              <label class="legenda" for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="EX: abcdeg@gmail.com*" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="Digite sua senha*" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="repitaSenha">Confirmar Senha</label>
+              <input type="password" id="repitaSenha" name="repitaSenha" placeholder="Repita sua senha*" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="rg">RG</label>
+              <input type="text" id="rg" name="rg" placeholder="Digite seu RG*" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="cep">Cep</label>
+              <input type="text" id="cep" name="cep" placeholder="Somente numeros*" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="rua">Rua</label>
+              <input type="text" id="rua" name="rua" placeholder="EX: Rua Pedro alvares cabral" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="bairro">Bairro</label>
+              <input type="text" id="bairro" name="bairro" placeholder="EX: Centro" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="EX: Nilopolis" required>
+            </div>
+
+            <div class="field">
+              <label class="legenda" for="estado">Estado</label>
+              <input class="input-box" type="text" id="estado" name="estado" placeholder="EX: RJ" required>
+            </div>
+            
+          </form>
+        </div>
+        <div id="msg-erro"></div>
+        <input type="submit" value="Cadastrar" class="btn btn-outline-success" id="cadUser" name="cadUser">
+      </div>
+    </div>
+
+    <script src="./js/cadastrarUsuario.js"></script>
+    <script src="./js/preencherCep.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
+
+
 </body>
 
 </html>

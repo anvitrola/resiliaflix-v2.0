@@ -13,7 +13,7 @@
 }
 .cabecalho__logo{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -31,7 +31,8 @@
     width: 100%;
 }
 .cabecalho__lista-link{
-    color: white;
+    font-size: 1.5rem;
+    color: rgb(90, 111, 121);
     cursor: pointer;
     font-weight: 700;
     padding: .3em;
@@ -47,5 +48,8 @@
 @media screen and (max-width: 768px){
     .cabecalho__menu{
         width: 50%;
+    }
+    .cabecalho__lista-link{
+        color: white;
     }
 }
