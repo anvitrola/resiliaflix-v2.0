@@ -23,12 +23,12 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/index/cabecalho-index.css">
-    <link rel="stylesheet" href="assets/css/index/banner.css">
-    <link rel="stylesheet" href="assets/css/index/dispositivos.css">
-    <link rel="stylesheet" href="assets/css/index/filmes-carrossel.css">
-    <link rel="stylesheet" href="assets/css/index/faca-parte.css">
-    <link rel="stylesheet" href="..//css/rodape-default.css">
+    <link rel="stylesheet" href="./Home/assets/css/index/cabecalho-index.css">
+    <link rel="stylesheet" href="./Home/assets/css/index/banner.css">
+    <link rel="stylesheet" href="./Home/assets/css/index/dispositivos.css">
+    <link rel="stylesheet" href="./Home/assets/css/index/filmes-carrossel.css">
+    <link rel="stylesheet" href="./Home/assets/css/index/faca-parte.css">
+    <link rel="stylesheet" href="./css/rodape-default.css">
     
     <script src="https://kit.fontawesome.com/3e11f101bb.js" crossorigin="anonymous"></script>
 
@@ -39,7 +39,11 @@
             <a href="#" class="cabecalho__logo">ResiliaFlix</a>
             <nav class="cabecalho__menu">
                 <ul class="cabecalho__lista">
-                    <li class="cabecalho__lista-item"><a href="" class="cabecalho__lista-link" data-toggle="modal" data-target="#loginModal">ENTRAR</a></li>
+                    <li class="cabecalho__lista-item">
+                      <button data-toggle="modal" data-target="#signUpModal">
+                      Cadastre-se
+                    </button>
+                  </li>
                 </ul>
             </nav>
         </div>
@@ -49,8 +53,8 @@
         <section class="banner">
                 <div class="container-fluid">
                     <h1 class="banner__titulo">Assista a filmes escolhidos<br> a dedo</h1>
-                    <button type="button" class="btn btn-secondary banner__botao">
-                        <a href="../EmExibicao/index.html" class="banner__link">Em exibição</a>
+                    <button type="button" class="btn btn-secondary banner__botao " data-toggle="modal" data-target="#loginModal">
+                        Entrar
                     </button>
                 </div>
         </section>
@@ -83,19 +87,19 @@
                             </ol>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="assets/imgs/ex-machina.jpg" class="d-block w-100 img-responsive"  alt="Banner do filme Ex-Machina. Personagem principl sobre um fundo preto">
+                                <img src="./Home/assets/imgs/ex-machina.jpg" class="d-block w-100 img-responsive"  alt="Banner do filme Ex-Machina. Personagem principl sobre um fundo preto">
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Ex-Machina</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="./assets/imgs/wonder-woman.jpg" class="d-block w-100" alt="Banner do filme Mulher-Maravilha. Personagem principal sobre um fundo mesclado com cores quentes">
+                                <img src="./Home/assets/imgs/wonder-woman.jpg" class="d-block w-100" alt="Banner do filme Mulher-Maravilha. Personagem principal sobre um fundo mesclado com cores quentes">
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Mulher-Maravilha</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="./assets/imgs/blood-diamond.jpeg" class="d-block w-100" alt="Banner do filme Diamantes de Sangue. Personagens principais aparecem de perfil sobre um fundo saturado com cores quentes.">
+                                <img src="./Home/assets/imgs/blood-diamond.jpeg" class="d-block w-100" alt="Banner do filme Diamantes de Sangue. Personagens principais aparecem de perfil sobre um fundo saturado com cores quentes.">
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Diamante de Sangue</h5>
                                 </div>
@@ -118,19 +122,19 @@
                             </ol>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="assets/imgs/never-back-down.jpg" class="d-block w-100" alt="Banner do filme Quebrando Regras. Fundo escuro, com cenas do filme sobre um efeito dourado, e título do filme em inglês">
+                                <img src="./Home/assets/imgs/never-back-down.jpg" class="d-block w-100" alt="Banner do filme Quebrando Regras. Fundo escuro, com cenas do filme sobre um efeito dourado, e título do filme em inglês">
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Quebrando Regras</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="./assets/imgs/little-miss-sunshine.jpg" class="d-block w-100" alt="Banner do filme Pequena Miss Sunshine. Personagens principais ao lado de uma kombi amarela.">
+                                <img src="./Home/assets/imgs/little-miss-sunshine.jpg" class="d-block w-100" alt="Banner do filme Pequena Miss Sunshine. Personagens principais ao lado de uma kombi amarela.">
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Pequena Miss Sunshine</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="./assets/imgs/clube-da-luta.jpg" class="d-block w-100" alt="Banner do filme Clube da Luta. Fundo escuro com a face dos personagens desenhada com efeito de pintura e no centro está o título do filme em inglês">
+                                <img src="./Home/assets/imgs/clube-da-luta.jpg" class="d-block w-100" alt="Banner do filme Clube da Luta. Fundo escuro com a face dos personagens desenhada com efeito de pintura e no centro está o título do filme em inglês">
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Clube da Luta</h5>
                                 </div>
@@ -159,10 +163,10 @@
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape fixed-bottom">
       <div class="container-fluid">
           <div class="rodape__contato">
-              <a href="contato.html" class="rodape__contato-link">Contato</a>
+              <a href="../contato/index.html" class="rodape__contato-link">Contato</a>
           </div>
           <div class="rodape__copyright">
               <p class="rodape__copyright-text">&copy; ResiliaFlix, 2021</p>
@@ -203,7 +207,80 @@
       </div>
     </div>
 
-    <script src="..//js/modal-login.js"></script>
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog"
+    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Novo Usuário</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- OS CAMPOS DE PREENCHIMENTO -->
+          <form id="cadastro">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="EX: abcdeg@gmail.com*" required>
+            </div>
+
+            <div class="field">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="Digite sua senha*" required>
+            </div>
+
+            <div class="field">
+              <label for="repitaSenha">Confirmar Senha</label>
+              <input type="password" id="repitaSenha" name="repitaSenha" placeholder="Repita sua senha*" required>
+            </div>
+
+            <div class="field">
+              <label for="rg">RG</label>
+              <input type="text" id="rg" name="rg" placeholder="Digite seu RG*" required>
+            </div>
+
+            <div class="field">
+              <label for="cep">Cep</label>
+              <input type="text" id="cep" name="cep" placeholder="Somente numeros*" required>
+            </div>
+
+            <div class="field">
+              <label for="rua">Rua</label>
+              <input type="text" id="rua" name="rua" placeholder="EX: Rua Pedro alvares cabral" required>
+            </div>
+
+            <div class="field">
+              <label for="bairro">Bairro</label>
+              <input type="text" id="bairro" name="bairro" placeholder="EX: Centro" required>
+            </div>
+
+            <div class="field">
+              <label for="cidade">Cidade</label>
+              <input type="text" id="cidade" name="cidade" placeholder="EX: Nilopolis" required>
+            </div>
+
+            <div class="field">
+              <label for="estado">Estado</label>
+              <input type="text" id="estado" name="estado" placeholder="EX: RJ" required>
+            </div>
+            
+          </form>
+        </div>
+        <div id="msg-erro" style="color: red;"></div>
+        <input type="submit" value="Cadastrar" class="btn btn-outline-success" id="cadUser" name="cadUser">
+      </div>
+    </div>
+
+
+    <script src="../js/modal-login.js"></script>
+    <script src="../novoUsuario/js/cadastrarUsuario.js"></script>
+    <script src="../novoUsuario/js/preencherCep.js"></script>
     <script src="../Api/omdb.js"></script>
     <script src="./scripts/index.js"></script> 
 </body>
