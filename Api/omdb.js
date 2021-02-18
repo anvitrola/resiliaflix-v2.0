@@ -43,7 +43,7 @@ class MoviesController {
     const api = new XMLHttpRequest();
     api.open(
       "GET",
-      `http://www.omdbapi.com/?t=${this.formatName(movieName)}&apikey=33710bc6&plot=full`
+      `https://www.omdbapi.com/?t=${this.formatName(movieName)}&apikey=33710bc6&plot=full`
     );
     api.addEventListener("load", () => {
       if (api.status == 200) {
