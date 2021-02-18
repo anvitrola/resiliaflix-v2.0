@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./Home/assets/css/index/dispositivos.css">
     <link rel="stylesheet" href="./Home/assets/css/index/filmes-carrossel.css">
     <link rel="stylesheet" href="./Home/assets/css/index/faca-parte.css">
+    <link rel="stylesheet" href="./Home/assets/css/index/modal-cadastro.css">
     <link rel="stylesheet" href="./css/rodape-default.css">
     
     <script src="https://kit.fontawesome.com/3e11f101bb.js" crossorigin="anonymous"></script>
@@ -39,10 +40,10 @@
             <nav class="cabecalho__menu">
                 <ul class="cabecalho__lista">
                     <li class="cabecalho__lista-item">
-                      <button data-toggle="modal" data-target="#signUpModal">
+                      <a data-toggle="modal" class="cabecalho__lista-link" data-target="#signUpModal">
                       Cadastre-se
-                    </button>
-                  </li>
+                      </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,8 +53,8 @@
         <section class="banner">
                 <div class="container-fluid">
                     <h1 class="banner__titulo">Assista a filmes escolhidos<br> a dedo</h1>
-                    <button type="button" class="btn btn-secondary banner__botao " data-toggle="modal" data-target="#loginModal">
-                        Entrar
+                    <button type="button" class="btn btn-secondary banner__botao"  data-toggle="modal" data-target="#loginModal">
+                      Entrar
                     </button>
                 </div>
         </section>
@@ -217,62 +218,62 @@
           </button>
         </div>
         <div class="modal-body">
-          <!-- OS CAMPOS DE PREENCHIMENTO -->
-          <form id="cadastro">
-            <div class="field">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
-            </div>
-
-            <div class="field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="EX: abcdeg@gmail.com*" required>
-            </div>
-
-            <div class="field">
-              <label for="senha">Senha</label>
-              <input type="password" id="senha" name="senha" placeholder="Digite sua senha*" required>
-            </div>
-
-            <div class="field">
-              <label for="repitaSenha">Confirmar Senha</label>
-              <input type="password" id="repitaSenha" name="repitaSenha" placeholder="Repita sua senha*" required>
-            </div>
-
-            <div class="field">
-              <label for="rg">RG</label>
-              <input type="text" id="rg" name="rg" placeholder="Digite seu RG*" required>
-            </div>
-
-            <div class="field">
-              <label for="cep">Cep</label>
-              <input type="text" id="cep" name="cep" placeholder="Somente numeros*" required>
-            </div>
-
-            <div class="field">
-              <label for="rua">Rua</label>
-              <input type="text" id="rua" name="rua" placeholder="EX: Rua Pedro alvares cabral" required>
-            </div>
-
-            <div class="field">
-              <label for="bairro">Bairro</label>
-              <input type="text" id="bairro" name="bairro" placeholder="EX: Centro" required>
-            </div>
-
-            <div class="field">
-              <label for="cidade">Cidade</label>
-              <input type="text" id="cidade" name="cidade" placeholder="EX: Nilopolis" required>
-            </div>
-
-            <div class="field">
-              <label for="estado">Estado</label>
-              <input type="text" id="estado" name="estado" placeholder="EX: RJ" required>
-            </div>
-            
-          </form>
+  <!-- OS CAMPOS DE PREENCHIMENTO -->
+  <form id="cadastro">
+    <div class="field">
+      <label class="legenda" for="nome">Nome</label>
+      <input class="input-box" type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="email">Email</label>
+      <input class="input-box" type="email" id="email" name="email" placeholder="Ex: abcdeg@gmail.com*" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="senha">Senha</label>
+      <input class="input-box" type="password" id="senha" name="senha" placeholder="Digite sua senha*" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="repitaSenha">Confirmar Senha</label>
+      <input class="input-box" type="password" id="repitaSenha" name="repitaSenha" placeholder="Repita sua senha*" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="rg">RG</label>
+      <input class="input-box" type="text" id="rg" name="rg" placeholder="Digite seu RG*" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="cep">Cep</label>
+      <input class="input-box" type="text" id="cep" name="cep" placeholder="Somente numeros*" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="rua">Rua</label>
+      <input class="input-box" type="text" id="rua" name="rua" placeholder="Ex: Rua Pedro Alvares Cabral" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="bairro">Bairro</label>
+      <input class="input-box" type="text" id="bairro" name="bairro" placeholder="Ex: Centro" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="cidade">Cidade</label>
+      <input class="input-box" type="text" id="cidade" name="cidade" placeholder="Ex: Nilopolis" required>
+    </div>
+  
+    <div class="field">
+      <label class="legenda" for="estado">Estado</label>
+      <input class="input-box" type="text" id="estado" name="estado" placeholder="Ex: RJ" required>
+    </div>
+  
+  </form>
         </div>
         <div id="msg-erro" style="color: red;"></div>
-        <input type="submit" value="Cadastrar" class="btn btn-outline-success" id="cadUser" name="cadUser">
+        <input type="submit" value="Cadastrar" class="btn btn-outline-success cadastro__botao" id="cadUser" name="cadUser">
       </div>
     </div>
 

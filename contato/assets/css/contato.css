@@ -1,62 +1,5 @@
-.cabecalhoPrincipal{
-    display: flex;
-    height: 7vh;
-    width: 100%;
-    justify-content: center;
-    background-color: #fffefe;
-}
-.cabecalhoPrincipal .container{
-    display: flex;
-    width: 99%;
-    justify-content: space-between;
-    align-items: center;
-}
-.logoHeader{
-    color: rgb(44, 43, 43);
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.barraNavegacao{
-    width: 30%;
-    height: 100%;
-}
-.barraNavegacaoLista{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-}
-.barraNavegacaoLink {
-    text-decoration: none;
-    font-weight: 700;
-    color: rgb(44, 43, 43);
-    text-transform: uppercase;
-}
-
-/**CONTEÚDO PRINCICIPAL**/
-.conteudoPrincipal{
-    height: 97vh;
-}
-
-/**RODAPÉ**/
-.rodape{
-    width: 100%;
-    height: 20vh;
-    display: flex;
-}
-.rodape .container-fluid {
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.copyright{
-    margin-bottom: 0;
-}
-.contato{
-    color: rgb(34, 34, 34);
+.contato .container-fluid{
+    margin-top: 3%;
 }
 .social-link {
     width: 30px;
@@ -70,7 +13,6 @@
     transition: all 0.3s;
     font-size: 0.9rem;
 }
-
 .social-link:hover, .social-link:focus {
     background: #ddd;
     text-decoration: none;

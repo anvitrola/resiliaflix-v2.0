@@ -1,0 +1,45 @@
+#cadastro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0px;
+}
+.field {
+    margin-bottom: 1em;
+    width: 40%;
+}
+.legenda {
+    margin-bottom: 0px;
+}
+#msg-erro {
+    color: red;
+    padding: 0 0 2em 2em;
+}
+.input-box {
+    border: 1px rgb(54, 88, 104) solid;
+    border-radius: 3px;
+    padding: .2rem;
+}
+.cadastro__botao{
+    background-color: rgb(54, 88, 104);
+    border: none;
+    border-radius: 0;
+    color: white;
+    height: 3em;
+    width: 100%;
+}
+.cadastro__botao:hover{
+    background-color: rgb(110, 136, 148);
+}
+@media screen and (max-width: 768px){
+    input{
+        width: 100%;
+    }
+    .field {
+        margin-bottom: 1em;
+        width: 40%;
+    }
+    .legenda {
+        margin-bottom: 0px;
+    }
+}
